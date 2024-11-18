@@ -1,0 +1,20 @@
+/**************************************
+    Compteur de largeur et orientation
+    NE PAS MODIFIER
+***************************************/
+
+aside {
+    width: 250px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#taille {
+    color: yellow;
+}
