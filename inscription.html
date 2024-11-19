@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="informations.css" />
     <script src="index.js"></script>
+    <script src="inscription.js"></script>
   </head>
   <body class="">
     <!--Compteur de largeur-->
@@ -59,6 +60,7 @@
                 placeholder="3 caractères minimum"
               />
               <hr />
+              <p id="invalidUsername"></p>
             </div>
             <div>
               <label for="email">Entrez votre email</label>
@@ -72,6 +74,7 @@
                 placeholder="Votre mail"
               />
               <hr />
+              <p id="invalidEmail"></p>
             </div>
             <div>
               <label for="mdp">Mot de passe</label>
@@ -85,6 +88,7 @@
                 placeholder="Votre mot de passe"
               />
               <hr />
+              <p id="invalidMdp"></p>
             </div>
             <div>
               <label for="mdpVerif">Confirmez votre mot de passe</label>
