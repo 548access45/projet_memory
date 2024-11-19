@@ -42,7 +42,75 @@
 
     <main class="">
       <article class="">
-        
+        <fieldset>
+          <legend>Profil</legend>
+          <div class="profil">
+            <label for="">Nom d'utilisateur</label>
+            <p><span id="username"></span></p>
+            <hr />
+            <br />
+            <label for="">Email</label>
+            <p><span id="email"></span></p>
+            <hr />
+          </div>
+          <br />
+          <div>
+            <section>
+              <div>
+                <h3>Choix du Memory</h3>
+                <select name="select" id="selectMemory">
+                  <option value="" selected>Alphabet scrable</option>
+                  <option value="">Animaux</option>
+                  <option value="">Animaux enimés</option>
+                  <option value="">Animaux domestiques</option>
+                  <option value="">Chiens</option>
+                  <option value="">Dinosaures</option>
+                  <option value="">Dinosaures avec nom</option>
+                  <option value="">Légumes</option>
+                </select>
+              </div>
+              <div>
+                <span id="imgChoixMemory"></span>
+              </div>
+            </section>
+
+            <br />
+            <section>
+              <h3>Taille du Memory</h3>
+              <select name="select" id="tailleMemory">
+                <option value="" selected>4*3</option>
+                <option value="">4*2</option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </section>
+          </div>
+          <div class="divbtn">
+            <button type="submit">Enregistrez Option</button>
+          </div>
+          <br>
+          <div>
+            <legend>Derniers Scores :</legend>
+            <table>
+              <tr>
+                <!-- Première ligne du tableau -->
+                <td>Pseudo</td>
+                <td>Score</td>
+                <td>Taille</td>
+                <td>Choix Memory</td>
+                <td>Date</td>
+              </tr>
+              <tr>
+                <!-- Deuxième ligne du tableau -->
+                <td>homer@sipmson.com</td>
+                <td>0</td>
+                <td>1par1</td>
+                <td>Donuts</td>
+                <td>19/11/2024</td>
+              </tr>
+            </table>
+          </div>
+        </fieldset>
       </article>
     </main>
     <script

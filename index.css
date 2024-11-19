@@ -189,7 +189,7 @@ article ul li {
 /********** FIN ARTICLE ************/
 
 /* Formulaire */
-form legend {
+legend {
   font-weight: 700;
   font-size: 2.5rem;
   text-align: center;
@@ -198,9 +198,8 @@ form input {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   width: 100%;
-  
 }
-form button {
+button {
   background: rgb(242, 232, 213); /* Remove background */
   border: none; /* Remove border */
   padding: 15px 50px 15px 50px; /* Remove padding */
@@ -210,12 +209,38 @@ form button {
   font-weight: 500;
 }
 form p {
-    font-weight: 500;
+  font-weight: 500;
 }
-.divbtn{
-    display: flex;
-    justify-content: space-around;
+.divbtn {
+  display: flex;
+  justify-content: space-around;
 }
+
+/** Tableau des Scores */
+
+table {
+  /*border-collapse:separate; /* Pour fusionner les bordures */
+  width: 100%; /* La largeur du tableau est de 100% */
+}
+table,
+th,
+td {
+  border: 1px solid rgb(182, 41, 41); /* Ajout d'une bordure autour du tableau, des cellules et des en-têtes */
+}
+th,
+td {
+  padding: 8px; /* Espacement autour du texte dans les cellules */
+  text-align: center; /* Centrage du texte dans les cellules */
+  border: 2px solid rgb(67, 29, 192);
+}
+table,
+th,
+td {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
+/** Fin Tableau des Scores */
 
 /* Fin Formulaire */
 

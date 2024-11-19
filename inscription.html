@@ -42,26 +42,70 @@
 
     <main class="">
       <article class="">
-        <form action="">
+        <fieldset>
           <legend>Inscrivez-vous.</legend>
-          <p>Nom d'utilisateur</p>
-          <input type="text" placeholder="3 caractères minimum" />
-          <hr />
-          <p>Entrez votre email</p>
-          <input type="text" placeholder="Votre mail" />
-          <hr />
-          <p>Mot de passe</p>
-          <input type="password" placeholder="Votre mot de passe" />
-          <hr />
-          <p>Confirmez votre mot de passe</p>
-          <input type="password" placeholder="Confirmez le mot de passe" />
-          <hr />
-          <br />
-          <div class="divbtn">
-            <button>Création du compte</button>
-            <button>Annuler</button>
-          </div>
-        </form>
+
+          <form action="" method="POST">
+            <div>
+              <label for="username">Nom d'utilisateur</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                required
+                autofocus
+                title="Renseignez votre nom d'utilisateur"
+                pattern="^[a-zA-Z0-9_-]{3,}$"
+                placeholder="3 caractères minimum"
+              />
+              <hr />
+            </div>
+            <div>
+              <label for="email">Entrez votre email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                required
+                title="Renseignez votre adresse email"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                placeholder="Votre mail"
+              />
+              <hr />
+            </div>
+            <div>
+              <label for="mdp">Mot de passe</label>
+              <input
+                type="password"
+                name="mdp"
+                id="mdp"
+                required
+                title="Renseignez votre mot de passe"
+                pattern="^(?=.*[0-9])(?=.*[\W_]).{6,}$"
+                placeholder="Votre mot de passe"
+              />
+              <hr />
+            </div>
+            <div>
+              <label for="mdpVerif">Confirmez votre mot de passe</label>
+              <input
+                type="password"
+                name="mdpVerif"
+                id="mdpVerif"
+                required
+                title="Confirmez votre mot de passe"
+                pattern="^(?=.*[0-9])(?=.*[\W_]).{6,}$"
+                placeholder="Confirmez le mot de passe"
+              />
+              <hr />
+            </div>
+            <br />
+            <div class="divbtn">
+              <button type="submit">Création du compte</button>
+              <button type="submit">Annuler</button>
+            </div>
+          </form>
+        </fieldset>
       </article>
     </main>
     <script
@@ -72,3 +116,4 @@
     <script src="informations.js" async></script>
   </body>
 </html>
+<!--patern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^\w\s]).{6,}"-->
