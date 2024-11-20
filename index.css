@@ -139,8 +139,8 @@ header h1 {
   margin-bottom: 2rem;
 }
 body {
-  background: linear-gradient(to bottom, #89db86 0%, #816ec4 100%);
-  font-family: sans-serif;
+  background: linear-gradient(to bottom, #000000 0%, #720000 100%);
+  font-family: "Times New Roman", Times, serif;
 }
 
 nav ul {
@@ -163,13 +163,15 @@ ul li a {
 }
 /********** ARTICLE ****************/
 article {
-  background-color: rgb(43, 43, 43);
+  background: radial-gradient(#000000 0%, #3a0000 100%);
   color: rgb(218, 218, 218);
   border-radius: 40px;
   padding: 2% 5% 2% 5%;
   font-size: 1.6rem;
   margin: 1% 25% 3% 25%;
-  border: 5px solid white;
+  /*border: 5px solid white;*/
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
 }
 article ul li {
   list-style: disc;
