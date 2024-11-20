@@ -46,7 +46,7 @@
         <fieldset>
           <legend>Inscrivez-vous.</legend>
 
-          <form action="" method="POST">
+          <form id="signup-form" action="" method="POST">
             <div>
               <label for="username">Nom d'utilisateur</label>
               <input
@@ -56,7 +56,6 @@
                 required
                 autofocus
                 title="Renseignez votre nom d'utilisateur"
-                pattern="^[a-zA-Z0-9_-]{3,}$"
                 placeholder="3 caractères minimum"
               />
               <hr />
@@ -70,7 +69,6 @@
                 id="email"
                 required
                 title="Renseignez votre adresse email"
-                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                 placeholder="Votre mail"
               />
               <hr />
@@ -84,11 +82,11 @@
                 id="mdp"
                 required
                 title="Renseignez votre mot de passe"
-                pattern="^(?=.*[0-9])(?=.*[\W_]).{6,}$"
                 placeholder="Votre mot de passe"
               />
               <hr />
               <p id="invalidMdp"></p>
+              
             </div>
             <div>
               <label for="mdpVerif">Confirmez votre mot de passe</label>
@@ -98,7 +96,6 @@
                 id="mdpVerif"
                 required
                 title="Confirmez votre mot de passe"
-                pattern="^(?=.*[0-9])(?=.*[\W_]).{6,}$"
                 placeholder="Confirmez le mot de passe"
               />
               <hr />
@@ -120,4 +117,8 @@
     <script src="informations.js" async></script>
   </body>
 </html>
-<!--patern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^\w\s]).{6,}"-->
+<!-- patterns -->
+<!-- username : pattern="^[a-zA-Z0-9_-]{3,}$" -->
+<!-- email : pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" -->
+<!-- mdp : patern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^\w\s]).{6,}"-->
+<!-- mdp 2 : pattern="^(?=.*[0-9])(?=.*[\W_]).{6,}$" -->
