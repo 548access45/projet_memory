@@ -1,0 +1,11 @@
+.memory{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+.a, .b, .c{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
