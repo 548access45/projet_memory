@@ -46,7 +46,8 @@
         <fieldset>
           <legend>Inscrivez-vous.</legend>
 
-          <form id="signup-form" action="connect.html" method="POST">
+          <form id="signup-form">
+            <!-- Action et méthode retirées -->
             <div>
               <label for="username">Nom d'utilisateur</label>
               <input
@@ -86,7 +87,6 @@
               />
               <hr />
               <p id="invalidMdp"></p>
-
             </div>
             <div>
               <label for="mdpVerif">Confirmez votre mot de passe</label>
@@ -103,7 +103,8 @@
             <br />
             <div class="divbtn">
               <button type="submit">Création du compte</button>
-              <button type="submit">Annuler</button>
+              <button type="button" id="cancel-btn">Annuler</button>
+              <!-- Change type to "button" -->
             </div>
           </form>
         </fieldset>
