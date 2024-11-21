@@ -60,7 +60,7 @@ function init () {
       
           // Vérification du nom d'utilisateur (au moins 3 caractères)
           if (username.length < 3) {
-            document.getElementById('invalidUsername').textContent = 'Le nom d\'utilisateur doit contenir au moins 3 caractères.';
+            document.getElementById('invalidUsername').textContent = 'Le nom d\ 'utilisateur doit contenir au moins 3 caractères.';
             isValid = false;
           } else {
             document.getElementById('invalidUsername').textContent = '';
